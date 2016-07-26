@@ -5,6 +5,7 @@ body {
 p {
 	color: white;
 	text-align: center;
+<<<<<<< HEAD
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 25px;
 	text-indent: 50px;
@@ -20,4 +21,19 @@ h2{
 	color: white;
 	text-align: left;
 	font-family: Verdana, Geneva, sans-serif;
+=======
+	font-family: Verdana;  	
+}	
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: Verdana;  	
+}
+
+h2{
+	color: white;
+	text-align: center;
+	font-family: Verdana;  	
+>>>>>>> fa8f2d6d6d06d77617887860c6d9f83b004ccf14
 }
