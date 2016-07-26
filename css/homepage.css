@@ -1,7 +1,23 @@
 body {
 	background-color: #A2D0E1;
-	color: white;
-	text-align: center;
-	font-family: Verdana;  
 }
 
+p {
+	color: white;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 25px;
+	text-indent: 50px;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h2{
+	color: white;
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+}
