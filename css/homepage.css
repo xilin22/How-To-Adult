@@ -1,7 +1,21 @@
 body {
 	background-color: #A2D0E1;
-	color: white;
-	text-align: center;
-	font-family: Verdana;  
 }
 
+p {
+	color: white;
+	text-align: center;
+	font-family: Verdana;  	
+}	
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: Verdana;  	
+}
+
+h2{
+	color: white;
+	text-align: center;
+	font-family: Verdana;  	
+}
