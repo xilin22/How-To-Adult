@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
 	background-color: #A2D0E1;
 }
@@ -7,28 +7,10 @@ h1 {
 	color: white;
 	text-align: center;
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 55px;
-=======
-body{
-	background-color: #A2D0E1
+	font-size: 55px
 }
-h1 {
-	color: white;
-	font-size: 55px;
-	text-align: center;
-	font-family: Verdana, Geneva, sans-serif;
->>>>>>> a3fdaa3266e3f417118c7dee26265b5fcd8f56f9
-	padding: 1%
-}
-
 .idk {
 	text-align: center;
 	font-family: Verdana, Geneva, sans-serif;
-<<<<<<< HEAD
 	font-size: 24px;
 }
-
-=======
-	font-size: 24px
-}
->>>>>>> a3fdaa3266e3f417118c7dee26265b5fcd8f56f9
