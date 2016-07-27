@@ -1,0 +1,14 @@
+#links {
+		list-style-type: none;
+		text-align: center;
+		font-size: 30px;
+}
+
+body {
+	background-color: #A2D0E1;
+}
+#head{
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 50px;
+}
