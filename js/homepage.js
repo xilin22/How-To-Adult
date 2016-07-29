@@ -4,7 +4,8 @@ $(document).ready(function(){
 	$("#search").submit(function(event){
 		event.preventDefault();
 		var data = $(this).serializeArray();
-		console.log(data[0].value)
+		// console.log(data[0].value)
+		searchWord(data[0].value);
 	})
 
 	//option 1
@@ -21,4 +22,30 @@ $(document).ready(function(){
 	// 	append a div that says "sorry, we don't have that"
 
 	//.append()
+
+	
 })
+
+function searchWord(searchKey) {
+	console.log(searchKey);
+	var searchData = {taxes:"file:///C:/Users/GWC11/Documents/How-To-Adult/taxes.html", 
+	bills:"file:///C:/Users/GWC11/Documents/How-To-Adult/bills.html", 
+	cars:"file:///C:/Users/GWC11/Documents/How-To-Adult/car.html", 
+	car:"file:///C:/Users/GWC11/Documents/How-To-Adult/car.html", 
+	interview:"file:///C:/Users/GWC11/Documents/How-To-Adult/interview.html", 
+	emergency:"file:///C:/Users/GWC11/Documents/How-To-Adult/preparedness.html", 
+	preparedness:"file:///C:/Users/GWC11/Documents/How-To-Adult/preparedness.html",
+	apartment:"file:///C:/Users/GWC11/Documents/How-To-Adult/house.html", 
+	resume:"file:///C:/Users/GWC11/Documents/How-To-Adult/resume.html"};
+
+	for(var key in searchData) {
+		if (key == searchKey){
+			console.log("im here!")
+			var newdiv1 = "<div id='link'><a href=\""+ searchData[key] +"\">" + searchKey + "</a></div>";
+  			
+  			newdiv1.href= searchData[key];
+			$("#giveLink").append(newdiv1);
+
+		}
+	}
+}
