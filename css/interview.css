@@ -1,5 +1,5 @@
 h1 {
-	color: white;
+	color: #F2DFD7;
 	font-size: 55px;
 	font-family: Verdana, Geneva, sans-serif;
 	padding-top: 3%;
@@ -47,7 +47,7 @@ body {
 }
 
 b {
-	color: white;
+	color: #F2DFD7;
 	font-size: 28px;
 	font-family: Verdana, Geneva, sans-serif;
 	text-indent: 75px;
@@ -66,9 +66,14 @@ b {
 	padding: 2%;
 }
 
-p {
+.more {
 	color: white;
 	font-size: 24px;
 	font-family: Verdana, Geneva, sans-serif;
 	margin: 0.5in;
+	text-align: center;
+}
+
+a {
+	color: #F2DFD7
 }
