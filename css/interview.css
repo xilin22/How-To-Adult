@@ -55,12 +55,14 @@ b {
 }
 
 .pic {
+	background-color: #F2DFD7;
 	width: 100%;
 	height: 400px;
 	padding: 2%;
 }
 
 .pics {
+	background-color: #F2DFD7;
 	width: 100%;
 	height: 400px;
 	padding: 2%;
