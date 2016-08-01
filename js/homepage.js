@@ -20,8 +20,8 @@ function readDataAndAppend(data){
    //this where your appending logic will go
    for (var i = 0; i < rows.length; i++) {
    		var comment = rows[i];
-   		var headerName = "<h3>" + comment.name + "</h3>";
-   		var userComment = "<p>" + comment.comment + "</p>";
+   		var headerName = "<h3 class='comment'>" + comment.name + "</h3>";
+   		var userComment = "<p class='comment'>" + comment.comment + "</p>";
    		$("#my-comments").append(headerName + userComment);
    	}
 }
