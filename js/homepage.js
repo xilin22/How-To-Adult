@@ -1,27 +1,52 @@
+var JSONURL = "https://spreadsheets.google.com/feeds/list/1_SgcM1KC0ZobhL_8f7xgsQ7vUB1Xxlg7hCHB6XkPNc4/1/public/basic?alt=json";
+
+function readDataAndAppend(data){
+    var rows = [];
+    var cells = data.feed.entry;
+    
+    for (var i = 0; i < cells.length; i++){
+        var rowObj = {};
+        rowObj.timestamp = cells[i].title.$t;
+        var rowCols = cells[i].content.$t.split(',');
+        for (var j = 0; j < rowCols.length; j++){
+            var keyVal = rowCols[j].split(':');
+            rowObj[keyVal[0].trim()] = keyVal[1].trim();
+        }
+        rows.push(rowObj);
+    }
+    
+   console.log(rows);
+}
+
 $(document).ready(function(){
 	//listening for the submit button
 	//grab the values from the form when clicked
 	$("#search").submit(function(event){
 		event.preventDefault();
 		var data = $(this).serializeArray();
-		// console.log(data[0].value)
 		searchWord(data[0].value);
 	})
 
-	//option 1
-	//if you get the value "taxes"
-		// append a div on the top with the link to the taxes the page
-	// else if you get the value "bills"
-		//append a div on the top with the link to the bills page
-	//etc
+	// $.ajax({
+	// 	url:JSONURL,
+	// 	success: function(data){
+	// 		readDataAndAppend(data);
+	// 	}
 
-	//option 2
-	//build an object literal/dictionarhy of all the search terms that are kosher as keys, as the value
-	// if the object literal has one of the search terms, then append a div with the associate link
-	// else 
-	// 	append a div that says "sorry, we don't have that"
+	// })
 
-	//.append()
+	$("#post").submit(function(event){
+		event.preventDefault();
+		var data = $(this).serialize();
+		console.log(data);
+
+		$.ajax({
+
+			url: "https://script.google.com/macros/s/AKfycbwLEi4t1ZlcwxMezDcxiVZzeRAhXiwbH_v-jrBm5YURlBrroRs/exec",
+			type: "POST",
+			data: data
+		})
+	})
 
 	
 })
