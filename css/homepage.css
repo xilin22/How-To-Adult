@@ -31,3 +31,16 @@ h2{
 	margin-left:90px;
 	margin-right:90px;
 }
+
+#post{
+	margin-right: auto;
+	margin-left: auto;
+	background: #BAD1CD;
+}
+
+.comment{
+	color:black;
+	font-size: 20px;
+	margin-right: 100px;
+	margin-left: 100px;
+}
