@@ -16,9 +16,24 @@ function readDataAndAppend(data){
     }
     
    console.log(rows);
+
+   //this where your appending logic will go
+   for (var i = 0; i < rows.length; i++) {
+   		var comment = rows[i];
+   		var headerName = "<h3>" + comment.name + "</h3>";
+   		var userComment = "<p>" + comment.comment + "</p>";
+   		$("#my-comments").append(headerName + userComment);
+   	}
 }
 
 $(document).ready(function(){
+
+	$.ajax({
+		url: "https://spreadsheets.google.com/feeds/list/1_SgcM1KC0ZobhL_8f7xgsQ7vUB1Xxlg7hCHB6XkPNc4/1/public/basic?alt=json",
+		success: function(data){
+			readDataAndAppend(data);
+		}
+	})
 	//listening for the submit button
 	//grab the values from the form when clicked
 	$("#search").submit(function(event){
@@ -46,6 +61,8 @@ $(document).ready(function(){
 			type: "POST",
 			data: data
 		})
+
+		
 	})
 
 	
