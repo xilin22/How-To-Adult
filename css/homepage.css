@@ -24,17 +24,32 @@ p {
 
 }*/
 
-h2{
+h3{
 	color: white;
 	font-size: 60px;
 	text-align: left;
+<<<<<<< HEAD
 	font-family: 'Raleway', sans-serif
+=======
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 2%;
+}
+
+#adulting{
+	height: 300px;
+	width: 90%;
+	margin-right:90px;
+	padding: 1%;
+>>>>>>> 0d8674ddc93824d98aed10d462827b8d3656fb82
 }
 
 #post{
 	margin-right: auto;
 	margin-left: auto;
+<<<<<<< HEAD
 	background: #f2f2f2;
+=======
+>>>>>>> 0d8674ddc93824d98aed10d462827b8d3656fb82
 }
 
 /*#my-comment{
@@ -82,6 +97,7 @@ footer{
 	margin-left: 950px
 }
 
+<<<<<<< HEAD
 .col-md-12 {
 	border-radius: 15px;
 	background: black;
@@ -110,4 +126,9 @@ text-align: center;
 	height: 400px;
 	/*width: 1200px;*/
 	overflow: scroll;
+=======
+#my-comments {
+	padding-top: 3%;
+	padding-bottom: 3%;
+>>>>>>> 0d8674ddc93824d98aed10d462827b8d3656fb82
 }
