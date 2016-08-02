@@ -1,6 +1,6 @@
 var JSONURL = "https://spreadsheets.google.com/feeds/list/1_SgcM1KC0ZobhL_8f7xgsQ7vUB1Xxlg7hCHB6XkPNc4/1/public/basic?alt=json";
 
-function readDataAndAppend(data){
+function readData(data){
     var rows = [];
     var cells = data.feed.entry;
     
@@ -16,9 +16,32 @@ function readDataAndAppend(data){
     }
     
    console.log(rows);
+
+   //this where your appending logic will go
+   appending(rows);
+  
 }
 
+function appending(rows) {
+	for (var i = 0; i < rows.length; i++) {
+   		var comment = rows[i];
+   		var headerName = "<h3 class='comment'>" + comment.name + "</h3>";
+   		var userComment = "<p class='comment'>" + comment.comment + "</p>";
+   		$("#my-comments").append(headerName + userComment);
+   	}
+}
+
+
+
+
 $(document).ready(function(){
+
+	$.ajax({
+		url: "https://spreadsheets.google.com/feeds/list/1_SgcM1KC0ZobhL_8f7xgsQ7vUB1Xxlg7hCHB6XkPNc4/1/public/basic?alt=json",
+		success: function(data){
+			readData(data);
+		}
+	})
 	//listening for the submit button
 	//grab the values from the form when clicked
 	$("#search").submit(function(event){
@@ -27,25 +50,27 @@ $(document).ready(function(){
 		searchWord(data[0].value);
 	})
 
-	// $.ajax({
-	// 	url:JSONURL,
-	// 	success: function(data){
-	// 		readDataAndAppend(data);
-	// 	}
-
-	// })
 
 	$("#post").submit(function(event){
 		event.preventDefault();
 		var data = $(this).serialize();
-		console.log(data);
+		var formattedData = $(this).serializeArray();
+		console.log(formattedData)
+
 
 		$.ajax({
-
 			url: "https://script.google.com/macros/s/AKfycbwLEi4t1ZlcwxMezDcxiVZzeRAhXiwbH_v-jrBm5YURlBrroRs/exec",
 			type: "POST",
 			data: data
 		})
+
+		var reformattedData = makeObject(formattedData);
+		appending(reformattedData);
+		// document.getElementById("submit").reset();
+
+		$("form").trigger("reset");
+
+	
 	})
 
 	
@@ -73,4 +98,17 @@ function searchWord(searchKey) {
 
 		}
 	}
+}
+
+
+
+function makeObject(data){
+	var result = {};
+
+	for (var i = 0; i < data.length; i++) {
+		result[data[i].name] = data[i].value;
+	}
+
+	result = [result]
+	return result;
 }

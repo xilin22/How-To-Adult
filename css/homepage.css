@@ -5,9 +5,8 @@ body {
 p {
 	color: white;
 	text-align: center;
-
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 25px;
+	font-size: 30px;
 	text-indent: 50px;
 }
 
@@ -19,7 +18,59 @@ h1 {
 
 h2{
 	color: white;
+	font-size: 60px;
 	text-align: left;
 	font-family: Verdana, Geneva, sans-serif;
+	padding: 2%;
 }
 
+#adulting{
+	height: 300px;
+	width: 90%;
+	margin-left:90px;
+	margin-right:90px;
+}
+
+#post{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.comment{
+	color:black;
+	font-size: 20px;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+footer{
+	background: black;
+}
+
+.footie{
+	font-size: 25px;
+	color: #C0C0C0;
+}
+
+.AboutUs{
+	font-size: 40px;
+	color: #C0C0C0;
+	margin-left: 200px:;
+}
+
+.Contact{
+	font-size: 40px;
+	color: #C0C0C0;
+	margin-left: 1100px;
+}
+
+.footie2{
+	color: #C0C0C0;
+	font-size: 25px;
+	margin-left: 950px
+}
+
+#my-comments {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
