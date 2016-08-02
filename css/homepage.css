@@ -16,7 +16,7 @@ h1 {
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-h2{
+h3{
 	color: white;
 	font-size: 60px;
 	text-align: left;
@@ -27,8 +27,8 @@ h2{
 #adulting{
 	height: 300px;
 	width: 90%;
-	margin-left:90px;
 	margin-right:90px;
+	padding: 1%;
 }
 
 #post{

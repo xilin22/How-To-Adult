@@ -29,28 +29,24 @@ body {
 	color: white;
 	font-size: 24px;
 	font-family: Verdana, Geneva, sans-serif;
-	margin: 0.5in;
-}
 
-.fonts{
+
+.fonts
 	color: white;
 	font-size: 24px;
 	font-family: Verdana, Geneva, sans-serif;
-	margin: 0.5in;
 }
 
 .experience{
 	color: white;
 	font-size: 24px;
 	font-family: Verdana, Geneva, sans-serif;
-	margin: 0.5in;
 }
 
 b {
 	color: #F2DED7;
 	font-size: 28px;
 	font-family: Verdana, Geneva, sans-serif;
-	text-indent: 75px;
 	margin: 0.5in;
 }
 
