@@ -25,7 +25,7 @@ function readData(data){
 function appending(rows) {
 	for (var i = 0; i < rows.length; i++) {
    		var comment = rows[i];
-   		var headerName = "<h3 class='comment'>" + comment.name + "</h3>";
+   		var headerName = "<h3 class='comment-name'>" + comment.name + "</h3>";
    		var userComment = "<p class='comment'>" + comment.comment + "</p>";
    		$("#my-comments").append(headerName + userComment);
    	}
@@ -68,7 +68,7 @@ $(document).ready(function(){
 		appending(reformattedData);
 		// document.getElementById("submit").reset();
 
-		$("form").trigger("reset");
+		$(this).trigger("reset");
 
 	
 	})
