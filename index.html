@@ -6,6 +6,9 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/type.less">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 
 	<!-- Javascripts -->
 
@@ -52,28 +55,77 @@
 
 	</nav>
 
+	
+	<div class="container">
+		<div class="row">
+				<div class="head1"><h1 class="head1">How to Adult</h1></div>
+		</div>
+
+		<div class="row"> 
+			<div class="col-md-12" id="adult">
+				<h2>Adulting (v) (uh-duhl-ting):</h2>
+				<p>To do grown up things and hold responsibilities such as hold a 9-5 job, a mortgage/rent, a car payment, or anything else that makes one think of grown ups.</p>
+			</div>	
+		</div>
+
+
 	<div id="adulting">
 	<h3>Adulting (v) (uh-duhl-ting):</h3>
 	<p class="def">To do grown up things and hold responsibilities such as hold a 9-5 job, a mortgage/rent, a car payment, or anything else that makes one think of grown ups.</p>
 	</div>
 
 	<h1>											</h1>
-	
-	<p>Some high school graduates and those in their 20's have no idea what they want to do and have difficulty dealing with the pressure society puts on them. This website's aim is to make those people comfortable and to teach them how to deal with life head-on.</p>
-
-
-	<section id="my-comments"><h1>Comments</h1></section>
 
 	
-	<form id="post">
+			<h1>											</h1>
+		<div class="row">	
+			<div class="col-md-12" id="audience">
+				<p>Some high school graduates and those in their 20's have no idea what they want to do and have difficulty dealing with the pressure society puts on them. This website's aim is to make those people comfortable and to teach them how to deal with life head-on.</p>
+			</div>
+		</div>
+
+			
+
+			<div id="wrap">
+				<div id="main">
+					<div class="row">
+						<div class="col-md-5">
+							<section id="my-comments"><h1>Comments</h1></section>
+						</div>
+					<div class="col-md-7">
+						<div id="upper_blank"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+	<!-- <form id="post">
 		Name: <input type='text' name='name' id='name' /><br/>
 		Email: <input type='text' name='email' id='email'/><br />
 		Comment: <br />
 		<textarea name = 'comment' id='comment'></textarea><br />
-		<input type='submit' value='Submit' id="submit" />
+		<input type='submit' value='Submit' />
+	</form> -->
+
+	
+	<form id="post">
+		<div class="form-group">
+			<label for="name"> Name:</label>
+			<input type="text" class="form-control" id="name" name="name">
+		</div>
+		<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="text" class="form-control" id="email" name="email">
+		</div>
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" row="5" id="comment" name="comment"></textarea>
+		</div>
+		<input type="submit" class="btn btn-default" value="Submit">
 	</form>
-
-
+	</div>
+	
 	<footer>
 		<div class="AboutUs">About Us:</div>
 
@@ -97,9 +149,6 @@
 	<script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/homepage.js"></script>
-
-</body>
-</html>
 
 </body>
 </html>
