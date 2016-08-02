@@ -24,7 +24,7 @@ h2{
 }
 
 #adulting{
-	background:#F2D1C9;
+	background: #C0C0C0;
 	/*opacity: 0.5;*/
 	height: 300px;
 	width: 90%;
@@ -43,4 +43,31 @@ h2{
 	font-size: 20px;
 	margin-right: 100px;
 	margin-left: 100px;
+}
+
+footer{
+	background: black;
+}
+
+.footie{
+	font-size: 25px;
+	color: #C0C0C0;
+}
+
+.AboutUs{
+	font-size: 40px;
+	color: #C0C0C0;
+	margin-left: 200px:;
+}
+
+.Contact{
+	font-size: 40px;
+	color: #C0C0C0;
+	margin-left: 1100px;
+}
+
+.footie2{
+	color: #C0C0C0;
+	font-size: 25px;
+	margin-left: 950px
 }
