@@ -1,5 +1,5 @@
 body {
-	background-color: #A2D0E1;
+	background-image:url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/gplaypattern.png");
 	color: white;
 }
 
@@ -7,25 +7,47 @@ h1{
 	
 	font-size:60px;
 	text-align:center;
-	padding: 2%
+	padding: 2%;
+	color: #595959;
+	font-family: 'Poiret One', cursive;
+
 }
 
+
 h2{
-	font-size:40px;
+	font-size:30px;
 	text-align: center;
-	padding: 1%
+	padding: 1%;
+	color: #595959;
+	font-family: 'Titillium Web', sans-serif;
+
 }
 
 p{
-	font-size: 33px;
+	font-size: 25px;
 	text-indent: 50px;
 	margin-right: 80px;
     margin-left: 80px;
-    padding: 1%
+    padding: 1%;
+    color: #595959;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .pics{
 	width: 320px;
 	height: 220px;
-	padding: 1%
+	padding: 1%;
+	border-color: #a6a6a6;
+	border-style: solid;
+	border-width: 5px;
+}
+
+.box{
+	border-color: lightgray;
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: white;
+	opacity: 0.5;
 }
