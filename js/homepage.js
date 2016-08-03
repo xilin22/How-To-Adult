@@ -79,15 +79,15 @@ $(document).ready(function(){
 
 function searchWord(searchKey) {
 	console.log(searchKey);
-	var searchData = {taxes:"file:///C:/Users/GWC11/Documents/How-To-Adult/taxes.html", 
-	bills:"file:///C:/Users/GWC11/Documents/How-To-Adult/bills.html", 
-	cars:"file:///C:/Users/GWC11/Documents/How-To-Adult/car.html", 
-	car:"file:///C:/Users/GWC11/Documents/How-To-Adult/car.html", 
-	interview:"file:///C:/Users/GWC11/Documents/How-To-Adult/interview.html", 
-	emergency:"file:///C:/Users/GWC11/Documents/How-To-Adult/preparedness.html", 
-	preparedness:"file:///C:/Users/GWC11/Documents/How-To-Adult/preparedness.html",
-	apartment:"file:///C:/Users/GWC11/Documents/How-To-Adult/house.html", 
-	resume:"file:///C:/Users/GWC11/Documents/How-To-Adult/resume.html"};
+	var searchData = {taxes:"taxes.html", 
+	bills:"bills.html", 
+	cars:"car.html", 
+	car:"car.html", 
+	interview:"interview.html", 
+	emergency:"preparedness.html", 
+	preparedness:"preparedness.html",
+	apartment:"house.html", 
+	resume:"resume.html"};
 
 	for(var key in searchData) {
 		if (key == searchKey){
