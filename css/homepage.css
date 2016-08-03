@@ -6,7 +6,7 @@ body {
 .head1 > h1{
 	font-family: 'Slabo', serif;
 	font size: 400px;
-	color:#33001a;
+	color:#000;
 	text-align: center;
 }
 p {
@@ -32,12 +32,6 @@ h3{
 	padding: 2%;
 }
 
-#adulting{
-	height: 300px;
-	width: 90%;
-	margin-right:90px;
-	padding: 1%;
-}
 
 #post{
 	margin-right: auto;
@@ -45,6 +39,9 @@ h3{
 	background: #f2f2f2;
 }
 
+.adulting{
+	color: #fff;
+}
 /*#my-comment{
 	color:black;
 	font-size: 20px;
@@ -74,12 +71,12 @@ footer{
 }
 
 .footie{
-	font-size: 25px;
+	font-size: 16px;
 	color: #C0C0C0;
 }
 .footie2{
 	color: #C0C0C0;
-	font-size: 25px;
+	font-size: 16px;
 	/*margin-left: 950px*/
 }
 
