@@ -13,7 +13,7 @@ p {
 	color: white;
 	text-align: center;
 	font-family: 'Slabo 27px', sans-serif;
-	font-size: 30px;
+	font-size: 32px;
 	text-indent: 50px;
 }
 
@@ -28,10 +28,7 @@ h3{
 	color: white;
 	font-size: 60px;
 	text-align: left;
-<<<<<<< HEAD
 	font-family: 'Raleway', sans-serif
-=======
-	font-family: Verdana, Geneva, sans-serif;
 	padding: 2%;
 }
 
@@ -40,16 +37,12 @@ h3{
 	width: 90%;
 	margin-right:90px;
 	padding: 1%;
->>>>>>> 0d8674ddc93824d98aed10d462827b8d3656fb82
 }
 
 #post{
 	margin-right: auto;
 	margin-left: auto;
-<<<<<<< HEAD
 	background: #f2f2f2;
-=======
->>>>>>> 0d8674ddc93824d98aed10d462827b8d3656fb82
 }
 
 /*#my-comment{
@@ -70,6 +63,12 @@ h3{
 	margin-right: 20;
 }
 
+.comment-name{
+	/*text-align: left;*/
+	font-size: 15px;
+	color: black;
+}
+
 footer{
 	background: black;
 }
@@ -78,26 +77,26 @@ footer{
 	font-size: 25px;
 	color: #C0C0C0;
 }
+.footie2{
+	color: #C0C0C0;
+	font-size: 25px;
+	/*margin-left: 950px*/
+}
 
-.AboutUs{
+/*.AboutUs{
 	font-size: 40px;
 	color: #C0C0C0;
-	margin-left: 200px:;
-}
+	/*margin-left: 200px:;}*/
+/*
 
 .Contact{
 	font-size: 40px;
 	color: #C0C0C0;
 	margin-left: 1100px;
-}
+}*/
 
-.footie2{
-	color: #C0C0C0;
-	font-size: 25px;
-	margin-left: 950px
-}
 
-<<<<<<< HEAD
+
 .col-md-12 {
 	border-radius: 15px;
 	background: black;
@@ -109,7 +108,7 @@ footer{
 border: 1px solid lightgray;
 background: white;
 opacity: 0.67;
-alignment-adjust: central;
+/*alignment-adjust: central;*/
 width: 1000px;
 margin-left: 50px;
 margin-top: 10px;
@@ -125,10 +124,9 @@ text-align: center;
 #wrap{
 	height: 400px;
 	/*width: 1200px;*/
-	overflow: scroll;
-=======
-#my-comments {
+	overflow-x: scroll;
+
+#my-comments{
 	padding-top: 3%;
 	padding-bottom: 3%;
->>>>>>> 0d8674ddc93824d98aed10d462827b8d3656fb82
 }

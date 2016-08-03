@@ -2,18 +2,18 @@ var JSONURL = "https://spreadsheets.google.com/feeds/list/1_SgcM1KC0ZobhL_8f7xgs
 
 function readData(data){
     var rows = [];
-    var cells = data.feed.entry;
-    
-    for (var i = 0; i < cells.length; i++){
-        var rowObj = {};
-        rowObj.timestamp = cells[i].title.$t;
-        var rowCols = cells[i].content.$t.split(',');
-        for (var j = 0; j < rowCols.length; j++){
-            var keyVal = rowCols[j].split(':');
-            rowObj[keyVal[0].trim()] = keyVal[1].trim();
-        }
-        rows.push(rowObj);
-    }
+    console.log(data)
+	var cells = data.feed.entry;
+	for (var i = 0; i < cells.length; i++){
+	  var rowObj = {};
+	  rowObj.timestamp = cells[i].title.$t;
+	  var rowCols = cells[i].content.$t.split(',');
+	  for (var j = 0; j < rowCols.length; j++){
+	    var keyVal = rowCols[j].split(':');
+	    rowObj[keyVal[0].trim()] = keyVal[1].trim();
+	  }
+	  rows.push(rowObj);
+	}
     
    console.log(rows);
 
@@ -40,6 +40,7 @@ $(document).ready(function(){
 		url: "https://spreadsheets.google.com/feeds/list/1_SgcM1KC0ZobhL_8f7xgsQ7vUB1Xxlg7hCHB6XkPNc4/1/public/basic?alt=json",
 		success: function(data){
 			readData(data);
+
 		}
 	})
 	//listening for the submit button

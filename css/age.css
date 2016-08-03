@@ -1,16 +1,18 @@
 
 body{
-	background-color: #A2D0E1
+	background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/small_steps.png");
 }
 h1 {
-	color: white;
+	color: #C0C0C0;
 	font-size: 55px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
+	padding: 1%;
 }
 
 .idk {
-	margin-left: 50px;
+	/*margin-left: 50px;*/
+	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	color: #BD6B73;
